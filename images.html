@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/images.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Gallery Hub</h1>
+            <h2>Share your moments, memories and creativity with us.</h2>
+        </div>
+        <div class="content">
+            <div class="choose">
+                <a href="upload_form.html" class="text_upload">Share</a>
+                <a href="images.html" class="text_image">Gallery</a>
+            </div>
+        </div>
+
+        <!--Список изображений-->
+
+        <div class="images-container">
+            <div class="images-header">
+                <div class="header-name">File Name</div>
+                <div class="header-url">Link</div>
+                <div class="header-delete">Remove</div>
+            </div>
+            <!--Здесь будут добавлены изображения динамически-->
+            <div class="images-list" id="images-list">
+                <!--Будем сюда подгружать через js изображения-->
+            </div>
+
+            <!--Пустое состояние-->
+            <div id="empty-state" class="empty-state" style="display: none;">
+                <p>Your gallery is empty</p>
+                <a href="upload_form.html">Add your first photo</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/images-list.js"></script>
+</body>
+</html>

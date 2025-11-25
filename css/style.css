@@ -1,0 +1,67 @@
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "Plus Jakarta Sans", sans-serif;
+  --primary-color: #7c3aed; /* Изменили с синего на фиолетовый */
+  --dark-bg: #1a1a2e; /* Изменили оттенок темного фона */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--dark-bg);
+    text-align: center;
+}
+.container>.header{
+    margin-top: 30px;
+}
+
+.header>h1{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 87%;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.header>h2{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    color: #e5e5e5;
+}
+
+.header>button{
+    margin-top: 40px;
+    background: var(--primary-color);
+    border: none;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 10px;
+    padding: 14px 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.header>button:hover{
+    transform: scale(1.05);
+}
+
+.header>button>a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#image{
+    margin-top: 60px;
+    width: 420px;
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out;
+    border-radius: 15px;
+}
